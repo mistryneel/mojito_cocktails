@@ -27,14 +27,14 @@ const Contact = () => {
         stagger: 0.02,
       })
       .to("#f-right-leaf", {
-        y: "-50",
+        x: "50",
         duration: 1,
         ease: "power1.inOut",
       })
       .to(
         "#f-left-leaf",
         {
-          y: "-50",
+          x: "-50",
           duration: 1,
           ease: "power1.inOut",
         },

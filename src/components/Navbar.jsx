@@ -14,9 +14,7 @@ const Navbar = () => {
 
     navTween.fromTo(
       "nav",
-      {
-        backgroundColor: "transparent",
-      },
+      { backgroundColor: "transparent" },
       {
         backgroundColor: "#00000050",
         backgroundFilter: "blur(10px)",
@@ -37,12 +35,7 @@ const Navbar = () => {
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className="text-gray-700 hover:text-gray-900"
-              >
-                {link.title}
-              </a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -50,5 +43,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
